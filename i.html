@@ -1,0 +1,209 @@
+<html>
+<head><title>Hacked by Itsuka VrCy</title>
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"c0c479bb72fa19d5839a325a15fa112f",petok:"87a116a4aadf672d3b4e34e3603e5a31af4d3908-1487751271-1800",zone:"defacer.id",rocket:"a",apps:{}}];document.write('<script type="text/javascript" src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=f2befc48d1/cloudflare.min.js"><'+'\/script>');}}catch(e){};
+//]]>
+</script>
+<link href='http://fonts.googleapis.com/css?family=Amatic%20SC' rel='stylesheet' type='text/css'>
+<meta content='VrCy ' name='description'/>
+<meta content='VrCy ' name='keywords'/>
+<meta content='VrCy ' name='Abstract'/></head>
+<script type="text/rocketscript">
+// <![CDATA[
+var colours=new Array("#a6f", "#60f", "#60f", "#a6f", "#ccc"); // colours for top, right, bottom and left borders and background of bubbles
+var bubbles=66; // maximum number of bubbles on screen
+
+/****************************
+* JavaScript Bubble Cursor *
+* (c) 2010 mf2fm web-design *
+* http://www.mf2fm.com/rv *
+* DON'T EDIT BELOW THIS BOX *
+****************************/
+var x=ox=400;
+var y=oy=300;
+var swide=800;
+var shigh=600;
+var sleft=sdown=0;
+var bubb=new Array();
+var bubbx=new Array();
+var bubby=new Array();
+var bubbs=new Array();
+
+window.onload=function() { if (document.getElementById) {
+var rats, div;
+for (var i=0; i<bubbles; i++) {
+rats=createDiv("3px", "3px");
+rats.style.visibility="hidden";
+
+div=createDiv("auto", "auto");
+rats.appendChild(div);
+div=div.style;
+div.top="1px";
+div.left="0px";
+div.bottom="1px";
+div.right="0px";
+div.borderLeft="1px solid "+colours[3];
+div.borderRight="1px solid "+colours[1];
+
+div=createDiv("auto", "auto");
+rats.appendChild(div);
+div=div.style;
+div.top="0px";
+div.left="1px";
+div.right="1px";
+div.bottom="0px"
+div.borderTop="1px solid "+colours[0];
+div.borderBottom="1px solid "+colours[2];
+
+div=createDiv("auto", "auto");
+rats.appendChild(div);
+div=div.style;
+div.left="1px";
+div.right="1px";
+div.bottom="1px";
+div.top="1px";
+div.backgroundColor=colours[4];
+div.opacity=0.5;
+if (document.all) div.filter="alpha(opacity=50)";
+
+document.body.appendChild(rats);
+bubb[i]=rats.style;
+}
+set_scroll();
+set_width();
+bubble();
+}}
+
+function bubble() {
+var c;
+if (x!=ox || y!=oy) {
+ox=x;
+oy=y;
+for (c=0; c<bubbles; c++) if (!bubby[c]) {
+bubb[c].left=(bubbx[c]=x)+"px";
+bubb[c].top=(bubby[c]=y)+"px";
+bubb[c].width="3px";
+bubb[c].height="3px"
+bubb[c].visibility="visible";
+bubbs[c]=3;
+break;
+}
+}
+for (c=0; c<bubbles; c++) if (bubby[c]) update_bubb(c);
+setTimeout("bubble()", 40);
+}
+
+function update_bubb(i) {
+if (bubby[i]) {
+bubby[i]-=bubbs[i]/2+i%2;
+bubbx[i]+=(i%5-2)/5;
+if (bubby[i]>sdown && bubbx[i]>0) {
+if (Math.random()<bubbs[i]/shigh*2 && bubbs[i]++<8) {
+bubb[i].width=bubbs[i]+"px";
+bubb[i].height=bubbs[i]+"px";
+}
+bubb[i].top=bubby[i]+"px";
+bubb[i].left=bubbx[i]+"px";
+}
+else {
+bubb[i].visibility="hidden";
+bubby[i]=0;
+return;
+}
+}
+}
+
+document.onmousemove=mouse;
+function mouse(e) {
+set_scroll();
+y=(e)?e.pageY:event.y+sleft;
+x=(e)?e.pageX:event.x+sdown; }
+
+window.onresize=set_width;
+function set_width() {
+if (document.documentElement && document.documentElement.clientWidth) {
+swide=document.documentElement.clientWidth;
+shigh=document.documentElement.clientHeight;
+}
+else if (typeof(self.innerHeight)=="number") {
+swide=self.innerWidth;
+shigh=self.innerHeight;
+}
+else if (document.body.clientWidth) {
+swide=document.body.clientWidth;
+shigh=document.body.clientHeight;
+}
+else {
+swide=800;
+shigh=600;
+}
+}
+
+window.onscroll=set_scroll;
+function set_scroll() {
+if (typeof(self.pageYOffset)=="number") {
+sdown=self.pageYOffset;
+sleft=self.pageXOffset;
+}
+else if (document.body.scrollTop || document.body.scrollLeft) {
+sdown=document.body.scrollTop;
+sleft=document.body.scrollLeft;
+}
+else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+sleft=document.documentElement.scrollLeft;
+sdown=document.documentElement.scrollTop;
+}
+else {
+sdown=0;
+sleft=0;
+}
+}
+
+function createDiv(height, width) {
+var div=document.createElement("div");
+div.style.position="absolute";
+div.style.height=height;
+div.style.width=width;
+div.style.overflow="hidden";
+return (div);
+}
+// ]]>
+</script>
+<div align="center">
+
+
+<p>
+<body><style>html{background-attachment:fixed;background-image:url(https://s16.postimg.org/cqtyj7kyt/795174.jpg);background-position:0 0;background-repeat:no-repeat;background-size:cover;}</style>
+<center>
+<link href='http://fonts.googleapis.com/css?family=Give+You+Glory' rel='stylesheet' type='text/css'>
+<center>
+<br><br><br><br><br><br><br><br><font face='tohama' size='50' color='black'>Indonesian Hacker Rulez<br>[N45HT]</br></font><br>
+<font face='Jolly Lodger' size='5' color='black'> Contact Me : <a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="7c15080f09171d520a0e1f053c1b111d1510521f1311">[email protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script> <br><br><br>Senyumanmu yang membuatku untuk bangkit, Karena Senyummu aku bersabar, karena senyummu aku rela dihina..!!<br>
+Jadi Tersenyumlah.. meski bukan karena aku kamu tersenyum.. :(</br></font>
+<br><br>
+<font face='tamoha' size='3' color='black'>Ketcuph:Itsuka VrCy :* - Shinchan - siluman.nanas - SCYTHE404_LOL - B0c4H_Id30T - ./08zvd - Noob_Orb - System_X404 - CSCT</font>
+<link href='http://fonts.googleapis.com/css?family=Jolly+Lodger' rel='stylesheet' type='text/css'>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false"></body>
+<script type="text/rocketscript"> 
+//form tags to omit in NS6+:
+var omitformtags=["input", "textarea", "select"]
+omitformtags=omitformtags.join("|")
+function disableselect(e){
+if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+return false
+}
+function reEnable(){
+return true
+}
+if (typeof document.onselectstart!="undefined")
+document.onselectstart=new Function ("return false")
+else{
+document.onmousedown=disableselect
+document.onmouseup=reEnable
+}
+</script>
+<body onkeydown="return false">
+<body onselectstart="return false">
+</body>
+</html>
